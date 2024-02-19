@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "hp/projects",
+	"version": "0.1.0",
+	"title": "Portfolio Projects",
+	"category": "design",
+	"icon": "smiley",
+	"description": "To show projects in a nice way.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "portfolio-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+  	"keywords": ["portfolio", "hp", "WCTC"],
+  	"attributes": {
+	  "title": {
+		"type": "string",
+		"source": "html",
+		"selector": ".title"
+	  },
+	  "photo": {
+		"type": "string",
+		"default": "https://placehold.it/200"
+	  },
+	  "linkUrl": {
+		"type": "string"
+	  }
+	}
+}

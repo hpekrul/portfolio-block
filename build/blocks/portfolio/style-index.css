@@ -1,0 +1,35 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/portfolio/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-hp-projects {
+  color: #fff;
+  background-color: #F3F3F3;
+}
+.wp-block-hp-projects .title {
+  text-align: center;
+}
+.wp-block-hp-projects .photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.wp-block-hp-projects .myButton {
+  background-color: lightblue;
+  color: #000000;
+  margin-left: 300px;
+}
+.wp-block-hp-projects .myButton a {
+  color: #000000;
+}
+.wp-block-hp-projects .cardBorder {
+  border-style: solid;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

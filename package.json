@@ -1,0 +1,23 @@
+{
+	"name": "portfolio-block",
+	"version": "0.1.0",
+	"description": "To show projects in a nice way ",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "^12.19.1",
+		"@wordpress/components": "^26.0.1",
+		"@wordpress/scripts": "^27.2.0",
+		"react": "^18.2.0"
+	}
+}

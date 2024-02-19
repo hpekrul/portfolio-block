@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import "../../scss/variables";
+.wp-block-hp-projects{
+	color: #fff;
+	background-color: $bg-gray;
+  .title{
+	text-align: center;
+  }
+  .photo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+  .myButton{
+	background-color: lightblue;
+	color: #000000;
+	margin-left: 300px;
+
+  }
+  .myButton a{
+	color: #000000;
+  }
+  .cardBorder{
+	border-style: solid;
+  }
+}
