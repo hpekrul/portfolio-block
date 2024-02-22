@@ -33,6 +33,15 @@
     },
     "linkUrl": {
       "type": "string"
+    },
+    "myButton": {
+      "type": "string"
+    },
+    "currentGradient": {
+      "type": "string"
+    },
+    "font": {
+      "type": "string"
     }
   }
 }

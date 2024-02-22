@@ -22,6 +22,7 @@ import {useBlockProps, RichText, MediaUpload, MediaUploadCheck, URLInputButton} 
  */
 import './editor.scss';
 import {Button} from "@wordpress/components";
+import {BlockSettings} from "./BlockSettings";
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -38,7 +39,8 @@ export default function Edit({attributes, setAttributes}) {
 	}
 
 	return (
-		<div { ...useBlockProps() }>
+		<div { ...useBlockProps()} style={ {background: attributes.currentGradient} }>
+			<BlockSettings attributes={attributes} setAttributes={setAttributes} />
 			<MediaUploadCheck>
 				<MediaUpload
 						allowedTypes={['image']}
@@ -50,14 +52,15 @@ export default function Edit({attributes, setAttributes}) {
 							onClick={open}/>}
 				/>
 			</MediaUploadCheck>
-				<RichText className="title"
+				<RichText style = {{fontSize: attributes.font}}
+					className="title"
 						  tagName="h3"
 						  placeholder="Title"
 						  value={attributes.title}
 						  onChange={ ( title ) => setAttributes( { title } ) }
 				/>
 
-			<Button>
+			<Button style = {{ backgroundColor: attributes.myButton}}>
 				<URLInputButton url={attributes.linkUrl} onChange={onChangeLinkUrl}/>paste link here
 			</Button>
 

@@ -17,19 +17,24 @@ import {Button} from "@wordpress/components";
  * @return {Element} Element to render.
  */
 export default function save({attributes}) {
+	const divStyles = {
+		background: attributes.currentGradient,
+	}
+
 	return (
-		<div { ...useBlockProps.save() }>
+		<div { ...useBlockProps.save({style: divStyles})}>
 			<div className="cardBorder">
 				<div>
 					<img className="photo" src={attributes.photo} alt="Placeholder Photo"/>
 				</div>
-				<RichText.Content className="title"
+				<RichText.Content style = {{fontSize: attributes.font}}
+								className="title"
 								  tagName="h3"
 								  value={attributes.title}>
 
 				</RichText.Content>
 				<div className="center">
-			<button className="myButton"><a href={attributes.linkUrl}>More Details</a></button>
+			<button className="myButton" style = {{ backgroundColor: attributes.myButton}}><a href={attributes.linkUrl}>More Details</a></button>
 				</div>
 			</div>
 		</div>
