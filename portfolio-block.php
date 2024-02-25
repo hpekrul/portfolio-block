@@ -26,5 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function portfolio_block_portfolio_block_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/portfolio' );
+	register_block_type( __DIR__ . '/build/blocks/holly-sites' );
 }
 add_action( 'init', 'portfolio_block_portfolio_block_block_init' );

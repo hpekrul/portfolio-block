@@ -19,5 +19,8 @@
 		"@wordpress/components": "^26.0.1",
 		"@wordpress/scripts": "^27.2.0",
 		"react": "^18.2.0"
+	},
+	"dependencies": {
+		"bootstrap": "^5.3.3"
 	}
 }
